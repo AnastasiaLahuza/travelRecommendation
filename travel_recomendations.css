@@ -82,3 +82,83 @@ nav {
 .search-container input[type="text"]::placeholder {
     color: teal;
   }
+
+  /* Into to website */
+  .intro {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    max-width: 52%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.intro-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 4.5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    color: white;;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-bottom: 1rem;
+}
+
+.intro-subtitle {
+    font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+    color: rgba(255, 255, 255, 0.88);
+    line-height: 1.65;
+    max-width: 38ch;
+    margin-bottom: 2rem;
+}
+
+.btn-book {
+    padding: 0.75rem 2rem;
+    background:teal;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+    text-transform: uppercase;
+}
+
+.social-sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+  }
+  
+  .social-link svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .social-link:hover {
+    background: #4caf85;
+    transform: translateX(4px);
+  }
