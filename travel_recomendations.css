@@ -32,16 +32,25 @@ nav {
 
 /* Navigation Links */
 .nav-links {
-    list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
     display: flex;
-    gap: 35px;
+    gap: 10px;
+    list-style: none;
 }
 
 .nav-links a {
     text-decoration: none;
     font-family: Georgia, sans-serif;
-    color: white;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    text-decoration: none;
+    color: white;
 }
 
 .nav-links a:hover {
