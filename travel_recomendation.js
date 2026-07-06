@@ -16,7 +16,7 @@ function searchDestination() {
         results = data.beaches;
       } else if (input.includes('temple')) {
         results = data.temples;
-      } else if (input.includes('country')) {
+      } else if (input.includes('countries')) {
         data.countries.forEach(country => {
           results = results.concat(country.cities);
         });
